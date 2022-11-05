@@ -1,0 +1,259 @@
+body{
+  background: var(--background-color);
+  box-sizing:border-box;
+}
+
+header{
+  width:100%;
+  padding:20px;
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+}
+
+header .logo{
+  height:40px;
+}
+
+header nav ul{
+  display: flex;
+  align-content: center;
+}
+
+header nav ul li a{
+  color: var(--text-color);
+  font-size:16px;
+  font-weight:400;
+  letter-spacing:1px;
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+}
+
+header nav ul li{
+  margin-right:20px;
+  list-style: none;
+  padding:10px 16px;
+  border: 1px solid var(--text-color);
+}
+
+header nav ul li a img{
+  margin-right: 12px;
+}
+
+.logout{
+  border:none;
+  background: var(--background-primary);
+}
+
+
+.container{
+  width:100%;
+  padding:20px;
+  margin:0px auto 50px auto;
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+/* Menu container styles */
+
+.container .menu-container{
+  width:100%;
+  height:350px;
+  padding:10px;
+  background: var(--background-primary);
+}
+
+.container .menu-container ul li a{
+  color: var(--text-color);
+  font-size:16px;
+  font-weight:400;
+  letter-spacing:1px;
+  display: flex;
+  align-content: center;
+}
+
+.container .menu-container ul li:hover{
+  background: var(--hover-color);
+}
+
+.container .menu-container ul li{
+  margin:10px;
+  list-style: none;
+  padding:10px 16px;
+}
+
+.container .menu-container ul li a img{
+  margin-right: 12px;
+}
+
+/* Search container styles */
+
+.search-container{
+  width:100%;
+  height:500px;
+  background: var(--background-primary);
+}
+
+.search-container h3{
+  margin:0;
+  padding:10px 20px;
+  width:100%;
+  background: var(--header-color);
+  font-weight:400;
+  letter-spacing:1px;
+}
+
+.search-container form{
+  display: flex;
+  flex-direction:column;
+  padding:20px;
+}
+
+.search-container form label{
+  padding:10px;
+}
+
+.search-container form input{
+  margin:10px;
+  padding:16px;
+  background: var(--background-color);
+  border: none;
+  color: var(--text-color);
+  font-size:18px;
+}
+
+.search-container form button{
+  margin: 20px 10px;
+  padding:16px 25px;
+  font-size:16px;
+  font-weight:400;
+  letter-spacing:1px;
+  background: var(--header-color);
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* Results container Styles */
+
+.results-container{
+  width: 100%;
+  background: var(--background-primary);
+}
+
+.results-container .results-header{
+  margin:0;
+  padding:10px 20px;
+  width:100%;
+  background: var(--header-color);
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+}
+
+.results-container .results-header h3{
+  font-weight:400;
+  letter-spacing:1px;
+}
+
+.results-container .results-header tag{
+  margin:0;
+  padding:8px 10px;
+  background: var(--tag-success);
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:1px;
+  border:none;
+  border-radius:6px;
+}
+
+
+.results-container .results-title{
+  margin:10px auto;
+  padding:10px 20px;
+  width:100%;
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+}
+
+.results-container .results-title p{
+  font-size:16px;
+  font-weight:400;
+  letter-spacing:1px;
+}
+
+.results-container .results-title tag{
+  margin:0;
+  padding:8px 16px;
+  background: var(--header-color);
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:1px;
+  border:none;
+  border-radius:6px;
+}
+
+
+/* table styles */
+table{
+  font-size:18px;
+  font-weight:400;
+  letter-spacing:1px;
+  margin:0px auto 20px auto;
+  width:96%;
+}
+th{
+  background: var(--header-color);
+  font-size:16px;
+  font-weight:400;
+  letter-spacing:1px;
+  text-align:center;
+  padding:4px;
+}
+
+td{
+  font-size:16px;
+  font-weight:400;
+  letter-spacing:1px;
+  text-align:center;
+  padding:4px;
+  border: 1px solid #fff;
+}
+
+td ul{
+  display: flex;
+  align-content: center;
+}
+
+td ul li a{
+  color: var(--text-color);
+  font-size:16px;
+  font-weight:400;
+  letter-spacing:1px;
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+}
+
+td ul li{
+  list-style: none;
+  padding:10px;
+  margin-right:10px;
+}
+
+.info{
+  background: var(--tag-info);
+}
+
+.basket{
+  background: var(--header-color);
+}
+
+.delete{
+  background: var(--tag-error);
+}
